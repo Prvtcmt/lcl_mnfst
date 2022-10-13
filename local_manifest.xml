@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote name="Im" fetch="https://github.com/RasyidKautsar" />
+  <remote name="I" fetch="https://github.com/Prvtcmt" />
+  <remote name="Friend" fetch="https://github.com/NRanjan-17" />
+  <remote name="kdrag0n" fetch="https://github.com/kdrag0n" />
+  <remote name="los" fetch="https://github.com/LineageOS" />
+
+  <!-- Trees -->
+        <project path="device/xiaomi/mido" name="android_device_xiaomi_mido" remote="Im" revision="pyro" />
+        <project path="vendor/xiaomi/mido" name="vendor_xiaomi_mido" remote="Friend" revision="thirteen" depth="1" />
+        <project path="kernel/xiaomi/mido" name="android_kernel_xiaomi_mido" remote="Im" depth="1" revision="tiramisu" />
+        <remove-project name="device_qcom_sepolicy-legacy-um" />
+        <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" remote="Im" revision="pyro" depth="1" />
+        <remove-project name="device_spark_sepolicy" />
+        <project path="device/spark/sepolicy" name="device_spark_sepolicy" remote="Im" depth="1" revision="pyro" />
+        <project path="prebuilts/clang/host/linux-x86/proton-clang" name="proton-clang" remote="kdrag0n" revision="master" depth="1" />
+        <remove-project name="packages_modules_Bluetooth" />
+        <project path="packages/modules/Bluetooth" name="packages_modules_Bluetooth" remote="Im" revision="pyro" depth="1" />
+        <project path="vendor/qcom/opensource/data-ipa-cfg-mgr-legacy-um" name="android_vendor_qcom_opensource_data-ipa-cfg-mgr-legacy-um" remote="Im" depth="1" revision="tiramisu" />
+        <remove-project name="system_sepolicy" />
+        <project path="system/sepolicy" name="system_sepolicy" remote="Im" revision="pyro" />
+
+</manifest>
